@@ -18,30 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJx-AX-jUa">
-                                <rect key="frame" x="20" y="79" width="48" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJx-AX-jUa">
+                                <rect key="frame" x="20" y="79" width="54" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFS-VY-xYq">
-                                <rect key="frame" x="96" y="108" width="42" height="21"/>
+                                <rect key="frame" x="102" y="108" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobbies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUo-Gk-IXw">
-                                <rect key="frame" x="20" y="108" width="68" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobbies:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUo-Gk-IXw">
+                                <rect key="frame" x="20" y="108" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyd-Ru-NMq">
-                                <rect key="frame" x="76" y="79" width="42" height="21"/>
+                                <rect key="frame" x="82" y="79" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcO-3g-Zs3">
+                                <rect key="frame" x="130" y="827" width="155" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Introduce Yourself"/>
+                                <connections>
+                                    <action selector="introduceYourselfButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKv-E0-C1E"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -50,12 +58,18 @@
                             <constraint firstItem="hJx-AX-jUa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="Fwx-Py-WoQ"/>
                             <constraint firstItem="zyd-Ru-NMq" firstAttribute="leading" secondItem="hJx-AX-jUa" secondAttribute="trailing" constant="8" symbolic="YES" id="G7c-se-LjM"/>
                             <constraint firstItem="hJx-AX-jUa" firstAttribute="baseline" secondItem="zyd-Ru-NMq" secondAttribute="baseline" id="LAF-Y3-Ik4"/>
+                            <constraint firstItem="wcO-3g-Zs3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="S6d-W7-BT0"/>
                             <constraint firstItem="OFS-VY-xYq" firstAttribute="leading" secondItem="aUo-Gk-IXw" secondAttribute="trailing" constant="8" symbolic="YES" id="Xjb-9e-3wr"/>
                             <constraint firstItem="hJx-AX-jUa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gZ0-T4-Skv"/>
                             <constraint firstItem="aUo-Gk-IXw" firstAttribute="baseline" secondItem="OFS-VY-xYq" secondAttribute="baseline" id="wAL-MG-vUJ"/>
+                            <constraint firstItem="wcO-3g-Zs3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="4" id="y9x-Q6-a92"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hobbiesLabel" destination="OFS-VY-xYq" id="z5z-NQ-XG0"/>
+                        <outlet property="nameLabel" destination="zyd-Ru-NMq" id="xRg-qv-lvb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

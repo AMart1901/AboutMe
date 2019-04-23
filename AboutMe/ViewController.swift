@@ -13,12 +13,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        print("My name is Austin Martin")
-        print("Hello #2")
-        
-        print("Hello #3")
+        //print("My name is Austin Martin")
+
     }
+    
+    @IBAction func introduceYourselfButtonTapped(_ sender: Any) {
+        
+        nameLabel.text = "Austin Martin"
+        hobbiesLabel.text = "Lifting weights & playing basketball"
+        
+    }
+    
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var hobbiesLabel: UILabel!
+
+
+
 
 
 }

@@ -13,9 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //print("My name is Austin Martin")
+        nameLabel.text = ""
+        hobbiesLabel.text = ""
 
     }
+    
     
     @IBAction func introduceYourselfButtonTapped(_ sender: Any) {
         
